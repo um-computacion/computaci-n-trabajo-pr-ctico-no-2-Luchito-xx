@@ -6,16 +6,17 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("Ana"))
         self.assertTrue(is_palindrome("Álula"))
         self.assertTrue(is_palindrome("Oto"))
+        self.assertTrue(is_palindrome("AFA"))
 
     def test_phrase_palindromes(self):
         self.assertTrue(is_palindrome("Somos o no somos"))
         self.assertTrue(is_palindrome("Sé verlas al revés"))
-        self.assertTrue(is_palindrome("Anita lava la tina"))
+        self.assertTrue(is_palindrome("Anita lava la tina "))
 
     def test_non_palindromes(self):
         self.assertFalse(is_palindrome("Carlos"))
         self.assertFalse(is_palindrome("Etec"))
-        self.assertFalse(is_palindrome("Catolico"))
+        self.assertFalse(is_palindrome("Catolicó"))
 
     def test_edge_cases(self):
         self.assertTrue(is_palindrome(" "))
