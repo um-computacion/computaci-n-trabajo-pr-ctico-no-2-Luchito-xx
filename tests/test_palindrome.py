@@ -6,6 +6,7 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("Ana"))
         self.assertTrue(is_palindrome("Álula"))
         self.assertTrue(is_palindrome("Oto"))
+        self.assertTrue(is_palindrome("AFA"))
 
     def test_phrase_palindromes(self):
         self.assertTrue(is_palindrome("Somos o no somos"))
