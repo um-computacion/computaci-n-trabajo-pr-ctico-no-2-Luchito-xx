@@ -1,7 +1,6 @@
 def is_palindrome(text):
 
     text = text.lower()
-
     #Acentos
     for acento, sinacento in (
         ("á", "a"), ("é", "e"), ("í", "i"),
