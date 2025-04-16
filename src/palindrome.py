@@ -13,8 +13,6 @@ def is_palindrome(text):
     limpio = ''.join(c for c in text if c.isalnum())
 
     return limpio == limpio[::-1]
-
-
 if __name__ == '__main__':
     texto = input("Ingresa una palabra o frase: ")
     if is_palindrome(texto):
